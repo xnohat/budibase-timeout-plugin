@@ -33,3 +33,6 @@ You can also re-build everytime you make a change to your plugin with the comman
 budi plugins --watch
 ```
 
+### Thanks
+Original author of [Budibase Interval Plugin](https://github.com/MartinPicc/budibase-interval-plugin)
+this plugin based on his work

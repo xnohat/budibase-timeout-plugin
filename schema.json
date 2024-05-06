@@ -1,0 +1,41 @@
+{
+  "type": "component",
+  "metadata": {},
+  "schema": {
+    "name": "Timeout",
+    "friendlyName": "Timeout",
+    "description": "Set timeout to run actions",
+    "icon": "Stopwatch",
+    "settings": [
+      {
+        "type": "number",
+        "key": "timeout",
+        "label": "Timeout (in seconds)",
+        "min": 1,
+        "required": true
+      },
+      {
+        "type": "boolean",
+        "key": "display",
+        "label": "Display component in frontend",
+        "defaultValue": true
+      },
+      {
+        "type": "text",
+        "key": "text",
+        "label": "Text to display",
+        "defaultValue": "Timeout",
+        "dependsOn": {
+          "setting": "display",
+          "value": true
+        }
+      },
+      {
+        "type": "event",
+        "key": "trigger",
+        "label": "On timeout"
+      }
+    ],
+    "info": "Experiencing bugs? Any feedback? visit: https://github.com/xnohat/budibase-timeout-plugin/issues"
+  }
+}
